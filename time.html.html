@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="veiwport" content="width=device-width,initial-scale=1">
+        <title>My CLock</title>
+        
+        <script>
+            let a;
+            let time;
+            let date;
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            setInterval(()=>{
+            a=  new Date();
+            date = a.toLocaleString(undefined, options); 
+            time= a.getHours() + ":" + a.getMinutes() + ':' + a.getSeconds();
+         document.getElementById('time').innerHTML = time + "on <br> "+ date;
+            },1000);
+        </script>
+    </head>
+    <body>
+<div class="container" >
+    <table>
+     <h3>Current time is:<span id="time"></span></h3>
+    
+    </table>
+</div>
+    </body>
+</html>
