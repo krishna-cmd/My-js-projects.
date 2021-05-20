@@ -19,7 +19,7 @@
         <div class="mb-3">
             <label for="myalarm" class="form-label">Set alarm</label>
             <input type="text" class="form-control" id="alarm" name="alarm">
-            <div id="emailHelp" class="form-text">Set your alarm we will notify you.</div>
+            <div id="emailHelp" class="form-text">Set your alarm we will notify you.(yyyy-mm-dd hh:mm:ss)</div>
         </div>
 
         <button type="submit" id="submit" class="btn btn-primary">Submit</button>
@@ -39,10 +39,12 @@
             alarmDate = new Date(alarm.value);
             console.log(`setting alarm for....${alarm.value}`);
             
-            now = new Date();
+            let now = new Date();
             
             let timeToAlarm    = alarmDate - now;
+            
             console.log(timeToAlarm);
+            
             if(timeToAlarm>=0){
             setTimeout(() => {
                 console.log("ringing now")
@@ -51,12 +53,6 @@
         }
         }
     </script>
-
-
-
-
-
-
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
