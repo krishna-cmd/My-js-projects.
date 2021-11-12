@@ -1,0 +1,53 @@
+body {
+  background: #86109b;
+  font-size: 20px;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-title{
+  display: block;
+  margin-left: 500px;
+  margin-right: auto;
+  color: white;
+}
+
+.container{
+  display: block;
+  margin-left: 500px;
+  margin-right: auto;
+  color: white;
+}
+
+.input-text{
+  height: 30px;
+  width: 150px;
+  border-radius: 15px;
+  margin-right: 30px;
+}
+
+.add-btn{
+background-color: rgb(58, 61, 231);
+color: white;
+height: 25px;
+width:75px;
+border-radius: 10px;
+}
+
+.list{
+  background-color: white;
+  width:355px;
+  color: black;
+}
+
+.btn{
+  margin-left: 40px;
+  background-color:green;
+  height: 30px;
+  color: white;
+  border-radius: 5px;
+}
